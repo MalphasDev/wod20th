@@ -1,0 +1,120 @@
+{
+  "Actor": {
+    "types": ["Vampire", "Human", "Ghul"],
+    "templates": {
+      "stats": {
+        "attributes": {
+          "physical": {
+            "Strength": 1,
+            "Dexterity": 1,
+            "Stamina": 1
+          },
+          "social": {
+            "Charisma": 1,
+            "Manipulation": 1,
+            "Appearance": 1
+          },
+          "mental": {
+            "Perception": 1,
+            "Intelligence": 1,
+            "Wits": 1
+          }
+        },
+
+        "abilities": {
+          "talents": {
+            "Alertness": 0,
+            "Athletics": 0,
+            "Awareness": 0,
+            "Brawl": 0,
+            "Empathy": 0,
+            "Expression": 0,
+            "Intimidation": 0,
+            "Leadership": 0,
+            "Streetwise": 0,
+            "Subterfuge": 0
+          },
+          "skills": {
+            "Animal Ken": 0,
+            "Archery": 0,
+            "Craft": 0,
+            "Etiquette": 0,
+            "Larceny": 0,
+            "Melee": 0,
+            "Performance": 0,
+            "Ride": 0,
+            "Stealth": 0,
+            "Survival": 0
+          },
+          "knowledges": {
+            "Academics": 0,
+            "Elder Knowledge": 0,
+            "Enigma": 0,
+            "Investigation": 0,
+            "Law": 0,
+            "Medicine": 0,
+            "Occult": 0,
+            "Politics": 0,
+            "Seneschal": 0,
+            "Theology": 0
+          }
+        }
+      },
+      "bloodBonds": {
+        "name": "",
+        "value": 0
+      },
+
+      "advantages": {
+        "virtues": {
+          "virtue1": {
+            "name": "",
+            "value": 1
+          },
+          "virtue2": {
+            "name": "",
+            "value": 1
+          },
+          "courage": 1
+        }
+      },
+      "willpower": 1,
+      "bloodpool": {
+        "value": 1,
+        "min": 0
+      }
+    },
+    "Vampire": {
+      "templates": ["stats", "advantages"],
+      "generation": 13,
+      "path": {
+        "name": "",
+        "value": 1,
+        "sins": {
+          "sin01": "",
+          "sin02": "",
+          "sin03": "",
+          "sin04": "",
+          "sin05": "",
+          "sin06": "",
+          "sin07": "",
+          "sin08": "",
+          "sin09": "",
+          "sin10": ""
+        }
+      },
+      "clanWeakness": ""
+    }
+  },
+  "Item": {
+    "types": [
+      "Item",
+      "Weapon",
+      "Armor",
+      "Background",
+      "Merit",
+      "Flaw",
+      "Disciplin"
+    ]
+  }
+}

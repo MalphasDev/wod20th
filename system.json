@@ -1,0 +1,15 @@
+{
+  "name": "wod20th",
+  "title": "World of Darkness - 20th Anniversary Edition",
+  "description": "World of Darkness System for Foundry.",
+  "author": "André Busch",
+  "version": 0.01,
+  "minimumCoreVersion": "0.8.9",
+  "compatibleCoreVersion": "0.8.9",
+  "esmodules": ["wod20th.js"],
+  "styles": ["/styles/fvtt-wod20th-style.css"],
+  "packs": [],
+  "languages": [],
+  "gridDistance:": 1,
+  "gridUnits": "m"
+}

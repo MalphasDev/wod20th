@@ -1,0 +1,12 @@
+.actorimg {
+  width: 100px;
+}
+.grid {
+  display: grid;
+}
+.col2-14 {
+  grid-template-columns: 1fr 4fr;
+}
+.col3 {
+  grid-template-columns: repeat(3, 1fr);
+}

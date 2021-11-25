@@ -1,0 +1,110 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <!-- Header -->
+    <div class="grid col2-14">
+        <img class="actorimg" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+        <h2 class="charname">
+            <input name="name" type="text" value="{{actor.name}}" placeholder="Charaktername"/>
+        </h2>
+    </div>
+
+    <!-- Attribute -->
+    <div class="grid col3">
+        <div>
+            <h3>Physical</h3>
+            <div>
+                {{log data.data}}
+                {{#each data.data.attributes.physical}}
+                <div>
+                    {{@key}}: {{#times this}}x{{/times}}{{#times this}}o{{/times}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div>
+            <h3>Social</h3>
+            <div>
+                {{#each data.data.attributes.social}}
+                <div>
+                    {{@key}}: {{this}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div>
+            <h3>Mental</h3>
+            <div>
+                {{#each data.data.attributes.mental}}
+                <div>
+                    {{@key}}: {{this}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Fertigkeiten -->
+    <div class="grid col3">
+        <div>
+            <h3>Talents</h3>
+            <div>
+                {{#each data.data.abilities.talents}}
+                <div>
+                    {{@key}}: {{#times this}}x{{/times}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div>
+            <h3>Skills</h3>
+            <div>
+                {{#each data.data.abilities.skills}}
+                <div>
+                    {{@key}}: {{this}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div>
+            <h3>Knowledges</h3>
+            <div>
+                {{#each data.data.abilities.knowledges}}
+                <div>
+                    {{@key}}: {{this}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="grid col3">
+        <div>
+            <h3>Disciplines</h3>
+            <div></div>
+        </div>
+        <div>
+            <h3>Backgrounds</h3>
+            <div></div>
+        </div>
+        <div>
+            <h3>Virtues</h3>
+            <div>
+                <div>
+                    {{data.data.virtues.virtue1.name}}: {{data.data.virtues.virtue1.value}}
+                </div>
+                <div>
+                    {{data.data.virtues.virtue2.name}}: {{data.data.virtues.virtue2.value}}
+                </div>
+                <div>
+                    Courage: {{data.data.courage}}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+</form>
